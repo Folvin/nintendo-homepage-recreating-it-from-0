@@ -1,0 +1,41 @@
+importante leggete!
+convenzione sulle nomeclature di commit e branch,
+per i nomi dei commit utilizzate la seguente struttura:
+
+type(opzionale scope): description
+
+opzionale body
+
+legenda:
+type = potete vedere una lista di type piu in basso in questo documento, 
+indica la tipologia di cambiamenti che il commit va ad applicare.
+
+scope = indica con una singola parola (per quanto possibile) dove sta avvenendo la modifica. 
+è opzionale potete anche non metterlo
+
+description = breve descrizione del commit
+
+body = descrizione piu dettagliata del commit. 
+è opzionale, solo se avete bisogno di una descrizione piu dettagliata
+
+esempio:
+docs: aggiunto naming convetion
+
+mi sono accorto che bisognava indicare che tipologia di convenzione per i nomi di branch e commit utilizzare 
+per il gruppo così ho creato questo documento che lo indica
+fine esempio.
+
+lista dei type:
+feat		nuova feature, nuove cose renderizzate e che l'utente finale vede
+fix		    bugfix per l'utente quindi di cose che l'utente finale vede non solo a livello di codice
+style		formattazione del codice, indentazioni spazi a capo etc. (nessuna modifica alla code base)
+refactor	refactoring del codice, riscrivere pezzi di codice ma meglio, (nessuna modifica a livello di feature)
+docs		modifiche ai documenti, per esempio questo documento
+
+per i branch invece utilizzare la seguente struttura:
+type/breve-descrizione
+per i type ricollegatevi agli stessi che ci sono sopra.
+esempio:
+feat/css-homepage-news
+
+se avete domande o consigli non esitate a contattarmi
