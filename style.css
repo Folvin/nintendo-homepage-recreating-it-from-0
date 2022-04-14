@@ -1,0 +1,39 @@
+html {
+    font-size: 16px;
+}
+
+h1 {
+    padding: 0;
+    margin: 0 0 0 30px;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex  {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 90vw;
+    padding: 0;
+    margin: 0;
+    gap: 0 10px;
+}
+
+/* i figli diretti del flex container, i flex item */
+.flex > * {
+    flex: 1 0 auto;
+}
+
+.grid {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    /* griglia adattiva */
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));    
+    gap: 5px 5px;
+}
