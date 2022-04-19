@@ -1,0 +1,82 @@
+.flex-online-store {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5vw;
+}
+
+.Start-shopping {
+    display: flex;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.Start-shopping > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Start-shopping > input {
+    background-color: red;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 2vw;
+    color: white;
+    border-radius: 5px;
+    width: 170px;
+    height: 46px;
+    border: none;
+}
+
+.console-show {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.family-switch-image {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+
+}
+
+.family-switch-image > input {
+    background-color: red;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    margin-left: 2vw;
+    color: white;
+    border-radius: 5px;
+    width: 170px;
+    height: 46px;
+    border: none;
+}
+
+.family-switch-image > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.online-store-head {
+    font-size: xx-large;
+}
+
+.game-head {
+    font-size: xx-large;
+}
+
+#main2 hr {
+    width: 100%;
+}
