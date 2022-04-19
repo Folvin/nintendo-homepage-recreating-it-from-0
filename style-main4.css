@@ -137,7 +137,6 @@
         /* il blocco rosso alla fine della prima fila di card quando in hover */
         #main4 .flex .see-full-list:hover {
             filter: brightness(80%);
-            transform: scale(0.9);
         }
 
         /* tutto il blocco rosso alla fine della prima fila è cliccabile per il link
