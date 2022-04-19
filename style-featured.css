@@ -1,8 +1,11 @@
-.featured-wrapper {
+/* .featured-wrapper {
     display: flex;
     overflow: auto;
     margin-bottom: 40px;
     margin-top: 40px;
+} */
+.overcoso{
+    overflow: auto;
 }
 
 .featured-card {
