@@ -8,90 +8,151 @@
     <link rel="stylesheet" href="style-main1.css">
     <title>nintendo</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="utility.css" type="text/css">
     <style>
-        
     </style>
+
+    <script src="https://kit.fontawesome.com/d349c74ebd.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-
-    <header>
-    <div class="Navbars-and-image">
-        <div class="First-navbar" >
-            <nav>
-                <div class="Flex-first-navbar">
-                    <div class="Nintendo-logo">
-                        <svg viewBox="0 0 97 24" xmlns="http://www.w3.org/2000/svg" width="69" role="presentation" alt="" data-testid="NintendoRacetrackLogoIcon" size="69" color="currentColor"><path d="M17.945 14.157l-4.85-7.838H9.609V17.59h3.486V9.752l4.85 7.838h3.456V6.32h-3.486l.03 7.837zm27.554-4.04V8.993H43.68v-1.52h-3.395v1.52h-1.849v1.124h1.85v7.473h3.394v-7.473h1.82zM23.341 17.56h3.364v-7.474h-3.364v7.474zm0-8.932h3.395V6.319H23.34v2.309zm59.17.942c-2.728 0-4.941 1.883-4.941 4.192s2.213 4.193 4.94 4.193c2.729 0 4.942-1.884 4.942-4.193 0-2.309-2.213-4.192-4.941-4.192zm1.364 5.772c0 1.185-.698 1.67-1.364 1.67-.667 0-1.395-.485-1.395-1.67v-3.16c0-1.184.697-1.67 1.395-1.67.666 0 1.364.486 1.364 1.67v3.16zm-10.73-4.891c-.547-.304-1.123-.608-1.91-.669-2.426-.212-4.305 1.945-4.305 3.92 0 2.612 2 3.554 2.304 3.706 1.152.516 2.607.547 3.88-.274v.426h3.334V6.32h-3.334c.03 0 .03 2.4.03 4.13zm.03 3.342v1.336c0 1.155-.789 1.458-1.334 1.458-.546 0-1.334-.303-1.334-1.458v-2.673c0-1.155.788-1.458 1.334-1.458.515 0 1.333.303 1.333 1.458v1.337zM34.616 9.752c-1.122.03-2.031.516-2.698 1.124v-.79h-3.365v7.474h3.365v-4.922c0-.638.697-1.367 1.607-1.367.909 0 1.546.73 1.546 1.367v4.922h3.364v-4.071c0-2.947-2.546-3.798-3.82-3.737zm27.433 0a4.075 4.075 0 0 0-2.698 1.124v-.79h-3.365v7.474h3.365v-4.922c0-.638.697-1.367 1.606-1.367.91 0 1.546.73 1.546 1.367v4.922h3.365v-4.071c0-2.947-2.546-3.798-3.82-3.737zm-7.063 4.101c0-2.309-2.243-4.253-4.971-4.253-2.759 0-4.972 1.884-4.972 4.193 0 2.308 2.213 4.192 4.972 4.192 2.273 0 4.213-1.306 4.789-3.068H51.44v.455c0 1.367-.91 1.671-1.394 1.671-.515 0-1.425-.304-1.425-1.67v-1.55l6.366.03zm-6.123-2.643a1.391 1.391 0 0 1 1.182-.668c.455 0 .91.213 1.182.668.212.365.212.82.212 1.458H48.62c0-.637.03-1.063.243-1.458zm39.921-3.493c0-.365-.272-.547-.818-.547h-.758v1.914h.455v-.79h.242l.364.79h.515l-.424-.851c.273-.091.424-.273.424-.516zm-.879.273h-.242v-.547h.212c.273 0 .424.091.424.274 0 .212-.12.273-.394.273zm.03-1.58c-.94 0-1.727.79-1.727 1.732s.788 1.732 1.728 1.732 1.727-.79 1.727-1.732a1.73 1.73 0 0 0-1.727-1.732zm0 3.13a1.413 1.413 0 0 1-1.394-1.398c0-.76.637-1.398 1.395-1.398.757 0 1.394.638 1.394 1.398 0 .76-.637 1.397-1.394 1.397zM84.148 0H12.64C5.062-.03 0 5.438 0 11.97c0 6.53 5.062 11.939 12.67 11.939h71.508c7.608 0 12.67-5.408 12.67-11.94C96.818 5.44 91.726 0 84.148 0zm-.03 20.993H12.671c-6.033.03-9.7-4.041-9.7-9.023 0-4.983 3.698-8.993 9.7-9.023h71.446c6.002 0 9.7 4.04 9.7 9.023 0 4.982-3.668 9.023-9.7 9.023z" fill="currentColor"></path></svg>
+    <nav class="fixed-nav">
+        <div class="navbars">
+            <div class="first-navbar">
+                <div class="flex-first-navbar">
+                    <div class="nintendo-logo">
+                        <svg class="svg-try" viewBox="0 0 97 24" xmlns="http://www.w3.org/2000/svg" width="69"
+                            role="presentation" alt="" data-testid="NintendoRacetrackLogoIcon" size="69"
+                            color="currentColor">
+                            <path
+                                d="M17.945 14.157l-4.85-7.838H9.609V17.59h3.486V9.752l4.85 7.838h3.456V6.32h-3.486l.03 7.837zm27.554-4.04V8.993H43.68v-1.52h-3.395v1.52h-1.849v1.124h1.85v7.473h3.394v-7.473h1.82zM23.341 17.56h3.364v-7.474h-3.364v7.474zm0-8.932h3.395V6.319H23.34v2.309zm59.17.942c-2.728 0-4.941 1.883-4.941 4.192s2.213 4.193 4.94 4.193c2.729 0 4.942-1.884 4.942-4.193 0-2.309-2.213-4.192-4.941-4.192zm1.364 5.772c0 1.185-.698 1.67-1.364 1.67-.667 0-1.395-.485-1.395-1.67v-3.16c0-1.184.697-1.67 1.395-1.67.666 0 1.364.486 1.364 1.67v3.16zm-10.73-4.891c-.547-.304-1.123-.608-1.91-.669-2.426-.212-4.305 1.945-4.305 3.92 0 2.612 2 3.554 2.304 3.706 1.152.516 2.607.547 3.88-.274v.426h3.334V6.32h-3.334c.03 0 .03 2.4.03 4.13zm.03 3.342v1.336c0 1.155-.789 1.458-1.334 1.458-.546 0-1.334-.303-1.334-1.458v-2.673c0-1.155.788-1.458 1.334-1.458.515 0 1.333.303 1.333 1.458v1.337zM34.616 9.752c-1.122.03-2.031.516-2.698 1.124v-.79h-3.365v7.474h3.365v-4.922c0-.638.697-1.367 1.607-1.367.909 0 1.546.73 1.546 1.367v4.922h3.364v-4.071c0-2.947-2.546-3.798-3.82-3.737zm27.433 0a4.075 4.075 0 0 0-2.698 1.124v-.79h-3.365v7.474h3.365v-4.922c0-.638.697-1.367 1.606-1.367.91 0 1.546.73 1.546 1.367v4.922h3.365v-4.071c0-2.947-2.546-3.798-3.82-3.737zm-7.063 4.101c0-2.309-2.243-4.253-4.971-4.253-2.759 0-4.972 1.884-4.972 4.193 0 2.308 2.213 4.192 4.972 4.192 2.273 0 4.213-1.306 4.789-3.068H51.44v.455c0 1.367-.91 1.671-1.394 1.671-.515 0-1.425-.304-1.425-1.67v-1.55l6.366.03zm-6.123-2.643a1.391 1.391 0 0 1 1.182-.668c.455 0 .91.213 1.182.668.212.365.212.82.212 1.458H48.62c0-.637.03-1.063.243-1.458zm39.921-3.493c0-.365-.272-.547-.818-.547h-.758v1.914h.455v-.79h.242l.364.79h.515l-.424-.851c.273-.091.424-.273.424-.516zm-.879.273h-.242v-.547h.212c.273 0 .424.091.424.274 0 .212-.12.273-.394.273zm.03-1.58c-.94 0-1.727.79-1.727 1.732s.788 1.732 1.728 1.732 1.727-.79 1.727-1.732a1.73 1.73 0 0 0-1.727-1.732zm0 3.13a1.413 1.413 0 0 1-1.394-1.398c0-.76.637-1.398 1.395-1.398.757 0 1.394.638 1.394 1.398 0 .76-.637 1.397-1.394 1.397zM84.148 0H12.64C5.062-.03 0 5.438 0 11.97c0 6.53 5.062 11.939 12.67 11.939h71.508c7.608 0 12.67-5.408 12.67-11.94C96.818 5.44 91.726 0 84.148 0zm-.03 20.993H12.671c-6.033.03-9.7-4.041-9.7-9.023 0-4.983 3.698-8.993 9.7-9.023h71.446c6.002 0 9.7 4.04 9.7 9.023 0 4.982-3.668 9.023-9.7 9.023z"
+                                fill="white"></path>
+                        </svg>
                     </div>
-                    <div class="Research-and-items">
-                        <div class="Research-bar">
-                            <div class="Navbar-symbol"><i class="fa-solid fa-magnifying-glass"></i></div>
-                            <div class="Navbar-text"></div>
-                            <div class="Navbar-text"></div>
-                            <div class="Navbar-symbol"><i class="fa-solid fa-angle-down"></i></div>
+                    <div class="navbar-right-and-research">
+                        <div class="research-and-items">
+                            <div class="research-bar">
+                                <div class="research-lens hover-red">
+                                    <div class="navbar-symbol"><i class="fa-solid fa-magnifying-glass"></i></div>
+                                    <div class="navbar-text">Search games, hardware, news, etc</div>
+                                </div>
+                                <div class="research-all-categories hover-red">
+                                    <div class="navbar-text2"><strong>All categories</strong></div>
+                                    <div class="navbar-item-symbol2"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="Navbar-item">
-                            <div class="Navbar-item-symbol"></div>
-                            <div class="Navbar-item-text"></div>
-                        </div>
-                        <div class="Navbar-item">
-                            <div class="Navbar-item-symbol"></div>
-                            <div class="Navbar-item-text"></div>
-                         </div>
-                         <div class="Navbar-item">
-                            <div class="Navbar-item-symbol"></div>
-                            <div class="Navbar-item-text"></div>
-                        </div>
-                        <div class="Navbar-item">
-                            <div class="Navbar-item-symbol"></div>
-                            <div class="Navbar-item-text"></div>
+                        <div class="navbar-top-right">
+                            <div class="navbar-item hover-red">
+                                <div class="navbar-item-symbol"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 32 32" width="18" role="presentation" alt=""
+                                        data-testid="SupportIcon" size="18" color="currentColor">
+                                        <path
+                                            d="M28.126.862H3.876A3.904 3.904 0 0 0 0 4.757v17.838a3.905 3.905 0 0 0 3.875 3.896h8.375c.125 0 .125 0 .125.125l3.626 4.397a.122.122 0 0 0 .125.125c.125 0 .125 0 .25-.125L20 26.616a.122.122 0 0 1 .124-.125h8.001A3.904 3.904 0 0 0 32 22.595V4.757A3.903 3.903 0 0 0 28.126.862zM17.954 20.91a2.018 2.018 0 0 1-.438.64 2.062 2.062 0 0 1-1.446.58 2.092 2.092 0 0 1-.802-.154 1.944 1.944 0 0 1-.652-.43 1.98 1.98 0 0 1-.427-.642 2.119 2.119 0 0 1-.001-1.59 1.97 1.97 0 0 1 .43-.65 2.055 2.055 0 0 1 .643-.432 2.078 2.078 0 0 1 1.613 0 2.152 2.152 0 0 1 .64.428l.002.001a2.045 2.045 0 0 1 .438 2.25zm2.964-10.055a4.505 4.505 0 0 1-.662 1.159 5.04 5.04 0 0 1-.861.844l-.822.622a6.01 6.01 0 0 0-.626.538.766.766 0 0 0-.231.426l-.303 1.923h-2.517l-.222-2.13a1.824 1.824 0 0 1 .193-1.127 3.152 3.152 0 0 1 .648-.812 7.965 7.965 0 0 1 .838-.658 6.94 6.94 0 0 0 .782-.626 3.116 3.116 0 0 0 .574-.716 1.726 1.726 0 0 0 .208-.873 1.287 1.287 0 0 0-.112-.55 1.213 1.213 0 0 0-.318-.414 1.482 1.482 0 0 0-.506-.275 2.946 2.946 0 0 0-1.628.018 3.595 3.595 0 0 0-.666.277 8.824 8.824 0 0 0-.49.294.966.966 0 0 1-1.483-.33l-.872-1.378.24-.212a8 8 0 0 1 .86-.657 6.234 6.234 0 0 1 1.023-.55 6.4 6.4 0 0 1 1.192-.37 6.63 6.63 0 0 1 3.248.15 4.301 4.301 0 0 1 1.475.826 3.736 3.736 0 0 1 .966 1.314 4.161 4.161 0 0 1 .34 1.703 4.304 4.304 0 0 1-.268 1.584z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg></div>
+                                <div class="navbar-item-text">Support</div>
+                            </div>
+                            <div class="navbar-item hover-red">
+                                <div class="navbar-item-symbol"><i class="fa-solid fa-heart"></i></div>
+                                <div class="navbar-item-text">Wish List</div>
+                            </div>
+                            <div class="navbar-item hover-red">
+                                <div class="navbar-item-symbol"><i class="fa-solid fa-cart-shopping"></i></div>
+                                <div class="navbar-item-text">Cart</div>
+                            </div>
+                            <div class="navbar-item hover-red">
+                                <div class="navbar-item-symbol"><i class="fa-solid fa-user"></i></div>
+                                <div class="navbar-item-text">Log in / Sign up</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-        <div class="Second-Navbar">
-            <nav>
-                <div class="Flex-second-navbar">
-                    <div class="Navbar-item">
-                        <div class="Navbar-item-symbol"></div>
-                        <div class="Navbar-item-text"></div>
-                        <div class="Navbar-item-symbol"></div>
+            </div>
+            <div class="second-navbar">
+                <div class="flex-second-navbar">
+                    <div class="navbar-item hover-red">
+                        <div class="navbar-item-symbol"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                width="18" role="presentation" alt="" data-testid="MyNintendoTileIcon" size="18"
+                                color="currentColor">
+                                <path
+                                    d="M26.667 0H5.333A5.333 5.333 0 0 0 0 5.333v21.334A5.333 5.333 0 0 0 5.333 32h21.334A5.333 5.333 0 0 0 32 26.667V5.333A5.333 5.333 0 0 0 26.667 0zm-5.105 22.423a5.212 5.212 0 0 1-2.37-.602 10.482 10.482 0 0 1-13.67-1.608.803.803 0 0 1 1.228-1.036 8.866 8.866 0 0 0 11.914 1.04.803.803 0 0 1 .986-.005 3.461 3.461 0 0 0 5.41-2.888 3.495 3.495 0 0 0-3.39-3.416c-.016 0-.036 0-.063-.002a.962.962 0 0 0-.12.003.806.806 0 0 1-.778-.455 6.54 6.54 0 0 0-5.992-3.848c-2.82 0-5.738 1.802-5.738 4.819-.003.818.35 1.596.969 2.132l1.688-3.147a.803.803 0 0 1 1.423.015l.982 1.926.983-1.926a.8.8 0 0 1 .71-.438c.3 0 .574.164.716.428l2.076 3.933a.8.8 0 0 1-.03.804.802.802 0 0 1-1.391-.054l-1.353-2.564-.995 1.95a.803.803 0 0 1-1.431-.001l-1-1.96-1.384 2.58a.805.805 0 0 1-1.046.349 4.563 4.563 0 0 1-2.524-4.027C7.372 10.403 11.107 8 14.717 8a8.081 8.081 0 0 1 7.209 4.308 5.063 5.063 0 0 1-.363 10.115z"
+                                    fill="currentColor" fill-rule="evenodd"></path>
+                            </svg></div>
+                        <div class="navbar-item-text"><strong> My Nintendo Store</strong></div>
+                        <div class="navbar-item-symbol"><i class="fa-solid fa-angle-down"></i></div>
                     </div>
-                    <div class="Navbar-item">
-                        <div class="Navbar-item-symbol"></div>
-                        <div class="Navbar-item-text"></div>
-                        <div class="Navbar-item-symbol"></div>
-                     </div>
-                     <div class="Navbar-item">
-                        <div class="Navbar-item-symbol"></div>
-                        <div class="Navbar-item-text"></div>
-                        <div class="Navbar-item-symbol"></div>
+                    <div class="navbar-item hover-red">
+                        <div class="navbar-item-symbol"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                width="18" role="presentation" alt="" data-testid="DPadIcon" size="18"
+                                color="currentColor">
+                                <path
+                                    d="M30.1 10.4h-8.5V1.9c0-1-.8-1.9-1.9-1.9h-7.5c-1 0-1.9.8-1.9 1.9v8.5H1.9c-1 0-1.9.8-1.9 1.9v7.5c0 1 .8 1.9 1.9 1.9h8.5v8.5c0 1 .8 1.9 1.9 1.9h7.5c1 0 1.9-.8 1.9-1.9v-8.5h8.5c1 0 1.9-.8 1.9-1.9v-7.5c-.1-1.1-.9-1.9-2-1.9zM7.5 16.9H3.8c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h3.8c.5 0 .9.4.9.9s-.5.9-1 .9zm9.4 11.3c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-3.8c0-.5.4-.9.9-.9s.9.4.9.9v3.8zm0-20.7c0 .5-.4.9-.9.9s-.9-.4-.9-.9V3.8c0-.5.4-.9.9-.9s.9.4.9.9v3.7zm11.3 9.4h-3.8c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h3.8c.5 0 .9.4.9.9.1.5-.3.9-.9.9z"
+                                    fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path>
+                            </svg></div>
+                        <div class="navbar-item-text"><strong>Games</strong></div>
+                        <div class="navbar-item-symbol"><i class="fa-solid fa-angle-down"></i></div>
                     </div>
-                    <div class="Navbar-item">
-                        <div class="Navbar-item-symbol"></div>
-                        <div class="Navbar-item-text"></div>
+                    <div class="navbar-item hover-red">
+                        <div class="navbar-item-symbol"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                width="18" role="presentation" alt="" data-testid="SwitchIcon" size="18"
+                                color="currentColor">
+                                <path
+                                    d="M13.54 0a.18.18 0 0 1 .17.17v31.66a.15.15 0 0 1-.17.17H8.11a6.86 6.86 0 0 1-6.85-6.8V6.74A6.81 6.81 0 0 1 8.11 0h5.43zm10.4 0a6.77 6.77 0 0 1 6.8 6.74V25.2a6.82 6.82 0 0 1-6.85 6.8h-5.43a.15.15 0 0 1-.17-.17V.17c0-.11.11-.17.22-.17h5.43zM7.49 19.6a1.26 1.26 0 1 0 0 2.51 1.32 1.32 0 0 0 1.31-1.25 1.28 1.28 0 0 0-1.31-1.26zm17-3.6a2.86 2.86 0 0 0-2.85 2.86A2.86 2.86 0 1 0 24.51 16zm-14.28.86a1.26 1.26 0 1 0 0 2.51 1.35 1.35 0 0 0 1.31-1.26 1.32 1.32 0 0 0-1.29-1.25zm-5.49 0a1.26 1.26 0 1 0 0 2.51 1.36 1.36 0 0 0 1.32-1.26 1.28 1.28 0 0 0-1.3-1.25zm2.75-2.69a1.26 1.26 0 1 0 0 2.52 1.37 1.37 0 0 0 1.33-1.26 1.28 1.28 0 0 0-1.31-1.26zm17-4a1.36 1.36 0 0 0-1.31 1.26 1.32 1.32 0 1 0 1.31-1.26zm-17-5.08a2.86 2.86 0 1 0 0 5.71 2.86 2.86 0 0 0 2.85-2.86 2.82 2.82 0 0 0-2.83-2.85zm19.77 2.4a1.26 1.26 0 1 0 1.31 1.25 1.32 1.32 0 0 0-1.29-1.25zm-5.43 0a1.26 1.26 0 1 0 1.31 1.25 1.29 1.29 0 0 0-1.29-1.25zm2.68-2.75A1.36 1.36 0 0 0 23.2 6a1.32 1.32 0 1 0 1.31-1.26z"
+                                    fill="currentColor" fill-rule="evenodd"></path>
+                            </svg></div>
+                        <div class="navbar-item-text"><strong>Nintendo Switch</strong></div>
+                        <div class="navbar-item-symbol"><i class="fa-solid fa-angle-down"></i></div>
                     </div>
-                    <div class="Navbar-item">
-                        <div class="Navbar-item-symbol"></div>
-                        <div class="Navbar-item-text"></div>
-                        <div class="Navbar-item-symbol"></div>
+                    <div class="navbar-item hover-red">
+                        <div class="navbar-item-symbol"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                width="18" role="presentation" alt="" data-testid="NewsIcon" size="18"
+                                color="currentColor">
+                                <path fill="currentColor"
+                                    d="M31.92 3.62a1.945 1.945 0 0 0-1.953-1.932H1.874A1.945 1.945 0 0 0-.08 3.62v10.068h32zm-32 11.692v7.201a2.027 2.027 0 0 0 1.954 1.998h8.711a2.777 2.777 0 0 1 2.178 1.073q2.97 4.736 3.315 4.728.344-.009 3.315-4.837a2.677 2.677 0 0 1 2.177-.964h8.398a2.027 2.027 0 0 0 1.953-1.998v-7.201zm14 5.15c0 .056-.07.1-.155.1H3.077c-.086 0-.156-.044-.156-.1v-1.051c0-.055.07-.1.156-.1h10.688c.086 0 .156.045.156.1z">
+                                </path>
+                            </svg></div>
+                        <div class="navbar-item-text-special"><strong>News & Events</strong> </div>
                     </div>
-                </div>
-            </nav>
-        </div>
-        <div class="image-and-description">
-            <div class="big-image"></div>
-            <div class="description-bar">
-                <div class="big-description-text"></div>
-                <div class="available-now-box"></div>
-                <div class="E-logo">
-                    <div class="E-logo-image"></div>
-                    <div class="E-logo-text"></div>
+                    <div class="navbar-item hover-red">
+                        <div class="navbar-item-symbol"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                width="18" role="presentation" alt="" data-testid="StarPlayNintendoIcon" size="18"
+                                color="currentColor">
+                                <path
+                                    d="M18.9 19.1c-.9 0-1-1.5-1-3.4s0-3.5 1-3.4c.9.1 1.1 1.4 1.1 3.3-.1 2-.2 3.5-1.1 3.5m-5.8 0c-.9 0-1-1.6-1-3.4 0-1.9.2-3.2 1.1-3.3 1-.1 1 1.5 1 3.4-.1 1.8-.2 3.3-1.1 3.3M32 12.4c-.1-.3-1.4-.6-5.6-1.1-2.6-.3-5.1-.5-5.2-.5-.2 0-.4-.2-.5-.4-.6-1.6-1.3-3.3-2-4.8C17.1 1.8 16.4.7 15.9.7c-.4 0-1 1.1-2.8 5-1.1 2.4-2 4.8-2 4.8-.1.2-.3.4-.5.4 0 0-2.5.1-5.1.4-4.1.4-5.4.7-5.5 1-.1.4.8 1.3 3.9 4.2 1.9 1.8 3.9 3.4 3.9 3.4.2.1.2.3.2.4v.1s-.6 2.5-1.2 5.1c-.6 3-1.1 5.4-.7 5.7.4.4 1.8-.5 5.2-2.4 2.3-1.3 4.4-2.7 4.5-2.7.2-.1.4-.1.6 0 0 0 2.2 1.4 4.4 2.7 3.4 2 4.7 2.7 5.2 2.4.4-.3 0-2.1-.7-5.7-.5-2.6-1.2-5.1-1.2-5.1v-.1c0-.2.1-.3.2-.4 0 0 1.9-1.6 3.9-3.3 3-2.9 3.9-3.9 3.8-4.2"
+                                    fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path>
+                            </svg></div>
+                        <div class="navbar-item-text"><strong>Play Nintendo</strong></div>
+                        <div class="navbar-item-symbol"><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
+    <header>
+        <div class="header-image-and-description">
+            <div class="image-and-description">
+                <div class="big-image"> <img srcset="images-header/NintendoSwitchImg.png" alt="Grande foto nintendo switch"></div>
+                <div class="description-bar">
+                    <div class="text-and-red-box">
+                        <div class="big-description-text">
+                            <h1>Pre-order digitally today, play on 4/29</h1>
+                        </div>
+                        <div class="pre-order-now-box">
+                            <h4>Pre-order now</h4>
+                        </div>
+                    </div>
+                    <div class="e-logo">
+                        <div class="e-logo-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.68 59.53" width="auto" height="auto" role="img" title="Everyone 10+"><defs><style>.cls-1{fill:#fff}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M39.69 0H0v59.53h39.69V0z"></path><path d="M39.11.64v58.25H.58V.64h38.53"></path><path class="cls-1" d="M2.52 2.71H36.9v9.66H2.52zM2.5 14.47h34.4v35.51H2.5zm.01 42.32v-4.71h6.9v1.1H5.28v.67h3.5v1.1h-3.5v.74h4.29v1.1H2.51zm12.93-3.34a.52.52 0 00-.4-.32 2.53 2.53 0 00-.72-.09c-.61 0-.88.1-.88.28 0 .69 4.87.26 4.87 2 0 1.09-1.64 1.63-4 1.63s-3.7-.73-3.75-1.58h2.65a.69.69 0 00.46.37 2.52 2.52 0 00.79.12c.69 0 1.16-.12 1.16-.35 0-.71-4.88-.22-4.88-2 0-1 1.56-1.5 3.67-1.5 2.35 0 3.43.66 3.63 1.49zm7.02.67h1.09c.86 0 1.32-.12 1.32-.45s-.47-.49-1.11-.49h-1.3zm0 1v1.64h-2.77v-4.68h4c2.82 0 3.75.43 3.75 1.34 0 .55-.44 1-1.43 1.16.9.18 1.44.29 1.44 1.24 0 .61 0 .83.29.83v.14h-2.81a1.83 1.83 0 01-.14-.82c0-.62-.19-.82-1.48-.82zm9.45-1.94V54h1.16c.55 0 1-.14 1-.41s-.54-.38-1.13-.38zm0 1.64v.87h1.21c.69 0 1.21-.08 1.21-.43s-.65-.44-1.53-.44zm-2.77 2v-4.74h4c1.9 0 3.42.25 3.42 1.18 0 .49-.57.84-1.1 1 .91.13 1.4.57 1.4 1.08 0 1.05-1.44 1.42-3.64 1.42z"></path><path d="M21.88 41.26H20.4v.81h1.48v1.44h.84v-1.44h1.48v-.81h-1.48v-1.44h-.84zm-2.36-.37c0-2.86-1.54-4.56-4.08-4.56-3.45 0-4.29 2.35-4.29 4.56 0 2.7 1.35 4.56 4.18 4.56s4.19-1.86 4.19-4.56M5.11 22.68l20.83-6.22 2.06 6.6-10.41 3.11.85 2.7L28.09 26l2.08 6.59-9.64 2.88.9 2.84 10.78-3.22 2.09 6.59L13.13 48l-8-25.32m.77 16.69a7 7 0 002.59-1.25V45h2v-8.63H8.54A6.88 6.88 0 015.9 37.7v1.67"></path><path d="M13 40.81c0-2.89 1.16-3.56 2.47-3.56 1.47 0 2.3 1.11 2.3 3.64 0 1.58-.44 3.52-2.32 3.51s-2.52-1.48-2.45-3.59M3.48 10.28V4.8h2.15v.84H4.31V7h1.22v.84H4.31v1.6h1.36v.84zM5.89 4.8h.86l.61 4 .69-4h.81l-1 5.48h-1zm3.35 5.48V4.8h2.14v.84h-1.32V7h1.22v.84h-1.22v1.6h1.37v.84zm3.53 0h-.83V4.8h1.53a.77.77 0 01.67.37 1.94 1.94 0 01.25 1.07 2.12 2.12 0 01-.17.88.77.77 0 01-.56.46h.18a.6.6 0 01.24.14.83.83 0 01.2.31 1.5 1.5 0 01.09.58v.87a3.48 3.48 0 000 .47 1.23 1.23 0 000 .29h-.8a1.54 1.54 0 01-.09-.52v-1a1.45 1.45 0 00-.06-.39.52.52 0 00-.17-.26A.53.53 0 0013 8h-.21zm0-3.11h.36a.28.28 0 00.2-.08.55.55 0 00.14-.19 1.1 1.1 0 00.06-.26 1.32 1.32 0 000-.27 1 1 0 00-.11-.56.36.36 0 00-.31-.17h-.36zm2.86 1.21l-1-3.58h.9l.59 2.32.63-2.32h.84l-1.1 3.58v1.9h-.83zm3.63 1.99a1.18 1.18 0 01-.79-.24 1.37 1.37 0 01-.4-.63 4 4 0 01-.15-.91v-2a4 4 0 01.15-.91 1.37 1.37 0 01.4-.63 1.18 1.18 0 01.79-.24A1.16 1.16 0 0120 5a1.29 1.29 0 01.4.63 3.15 3.15 0 01.15.91v2a3.15 3.15 0 01-.15.91 1.29 1.29 0 01-.4.63 1.16 1.16 0 01-.74.29zm0-.82a.37.37 0 00.27-.11.75.75 0 00.16-.37 3.22 3.22 0 00.07-.62V6.63a3.22 3.22 0 00-.07-.63.75.75 0 00-.16-.36.34.34 0 00-.27-.12.35.35 0 00-.28.12.86.86 0 00-.16.36 4.29 4.29 0 00-.07.62v1.82a4.29 4.29 0 00.07.62.85.85 0 00.16.37.38.38 0 00.28.12zm2.01.73V4.8h1.11l1.05 3.8V4.8h.77v5.48h-1.08l-1.07-4v4zm3.63 0V4.8h2.15v.84h-1.33V7h1.22v.84h-1.22v1.6h1.37v.84zm3.86-4.61a3.44 3.44 0 00.4-.37 2.27 2.27 0 00.34-.48h.72v5.46h-.82v-4.2a3.26 3.26 0 01-.31.33l-.33.28zm3.36-.92a1.09 1.09 0 01.57.14 1 1 0 01.33.47 3.47 3.47 0 01.16.86V8.7a4.31 4.31 0 01-.13.89 1.24 1.24 0 01-.34.56.84.84 0 01-.6.2.81.81 0 01-.6-.2 1.24 1.24 0 01-.34-.56 4.31 4.31 0 01-.13-.89V6.22a3.47 3.47 0 01.16-.86.89.89 0 01.33-.47 1 1 0 01.59-.14zm0 .8a.24.24 0 00-.19.08.64.64 0 00-.1.29v2.61a4.39 4.39 0 000 .61.64.64 0 00.1.3.19.19 0 00.18.08.21.21 0 00.18-.08.64.64 0 00.1-.3c0-.14 0-.35.05-.61V5.92a.64.64 0 00-.1-.29.26.26 0 00-.22-.08zm2.27.32H35v1.49h.92v.84H35v1.5h-.61V8.2h-.93v-.84h.93z"></path></g></g></svg></div>
+                        <div class="e-logo-text">
+                            <div class="e-logo-text1"><p>Mild Violence<p></div>
+                            <div class="e-logo-text2"><p>In-Game Purchases, Users Interact</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -106,7 +167,8 @@
                     <span class="n-sw">Nintendo Switch</span>
                 </div>
                 <div class="card">
-                    <img class="img-card-featured" src="assets-main1/TRIANGLE STRATEGY2.png" alt="Triangle Strategy2" /> <br>
+                    <img class="img-card-featured" src="assets-main1/TRIANGLE STRATEGY2.png" alt="Triangle Strategy2" />
+                    <br>
                     <h3 class="n-s"><a class="card-link" href="#">Triangle Strategy - Available now</a></h3>
                     <span class="n-sw">Nintendo Switch</span>
                 </div>
@@ -116,7 +178,8 @@
                     <span class="n-sw">Nintendo Switch</span>
                 </div>
                 <div class="card">
-                    <img class="img-card-featured" src="assets-main1/Nintendo Switch Sports.PNG" alt="Nintendo Switch Sports" /> <br>
+                    <img class="img-card-featured" src="assets-main1/Nintendo Switch Sports.PNG"
+                        alt="Nintendo Switch Sports" /> <br>
                     <h3 class="n-s"> <a class="card-link" href="#">Nintendo Switch Sports - Pre-order now</a></h3>
                     <span class="n-sw">Nintendo Switch</span>
                 </div>
@@ -126,22 +189,26 @@
                     <span class="n-sw">Nintendo Switch</span>
                 </div>
                 <div class="card">
-                    <img class="img-card-featured" src="assets-main1/Fortnite.png" alt="Fortnite Season 3 Chapter 2 Resistance" /> <br>
+                    <img class="img-card-featured" src="assets-main1/Fortnite.png"
+                        alt="Fortnite Season 3 Chapter 2 Resistance" /> <br>
                     <h3 class="n-s"> <a class="card-link" href="#">Fortnite Season 3 Chapter 2 Resistance</a></h3>
                     <span class="n-sw">Nintendo Switch</span>
                 </div>
                 <div class="card">
-                    <img class="img-card-featured" src="assets-main1/Pokemon.png" alt="Pokémon Legends: Arceus - Available now" /> <br>
+                    <img class="img-card-featured" src="assets-main1/Pokemon.png"
+                        alt="Pokémon Legends: Arceus - Available now" /> <br>
                     <h3 class="n-s"> <a class="card-link" href="#">Pokémon Legends: Arceus - Available now</a></h3>
                     <span class="n-sw">Nintendo Switch</span>
                 </div>
                 <div class="card">
-                    <img class="img-card-featured" src="assets-main1/METROID DREAD.png" alt="Metroid Dread - Available now" /> <br>
+                    <img class="img-card-featured" src="assets-main1/METROID DREAD.png"
+                        alt="Metroid Dread - Available now" /> <br>
                     <h3 class="n-s"> <a class="card-link" href="#">Metroid Dread - Available now</a></h3>
                     <span class="n-sw">Nintendo Switch</span>
                 </div>
                 <div class="card">
-                    <img class="img-card-featured" src="assets-main1/13 SENTINELS.png" alt="13 Sentinels: Aegis Rim - Pre-order now" />
+                    <img class="img-card-featured" src="assets-main1/13 SENTINELS.png"
+                        alt="13 Sentinels: Aegis Rim - Pre-order now" />
                     <br>
                     <h3 class="n-s"> <a class="card-link" href="#">13 Sentinels: Aegis Rim - Pre-order now</a></h3>
                     <span class="n-sw">Nintendo Switch</span>
@@ -155,7 +222,8 @@
                 <div class="card">
                     <img class="img-card-featured" src="assets-main1/Mario Straikers.png"
                         alt="Mario Strikers: Battle League - Pre-order now" /> <br>
-                    <h3 class="n-s"> <a class="card-link" href="#">Mario Strikers: Battle League - Pre-order now</a></h3>
+                    <h3 class="n-s"> <a class="card-link" href="#">Mario Strikers: Battle League - Pre-order now</a>
+                    </h3>
                     <span class="n-sw">Nintendo Switch</span>
                 </div>
                 <div class="card">
@@ -165,18 +233,21 @@
                     <span class="n-sw">Nintendo Switch</span>
                 </div>
                 <div class="card">
-                    <img class="img-card-featured" src="assets-main1/Big Brain Academy.png" alt="Big Brain Academy: Brain vs Brain" />
+                    <img class="img-card-featured" src="assets-main1/Big Brain Academy.png"
+                        alt="Big Brain Academy: Brain vs Brain" />
                     <br>
                     <h3 class="n-s"> <a class="card-link" href="#">Big Brain Academy: Brain vs Brain</a></h3>
                     <span class="n-sw">Nintendo Switch</span>
                 </div>
                 <div class="card">
-                    <img class="img-card-featured" src="assets-main1/Apex.png" alt="Apex Legends new season - Defiance" /> <br>
+                    <img class="img-card-featured" src="assets-main1/Apex.png"
+                        alt="Apex Legends new season - Defiance" /> <br>
                     <h3 class="n-s"> <a class="card-link" href="#">Apex Legends new season - Defiance</a></h3>
                     <span class="n-sw">Nintendo Switch</span>
                 </div>
                 <div class="card">
-                    <img class="img-card-featured" src="assets-main1/Animal Crossing.png" alt="Animal Crossing: New Horizons DLC" /> <br>
+                    <img class="img-card-featured" src="assets-main1/Animal Crossing.png"
+                        alt="Animal Crossing: New Horizons DLC" /> <br>
                     <h3 class="n-s"> <a class="card-link" href="#">Animal Crossing: New Horizons DLC</a></h3>
                     <span class="n-sw">Nintendo Switch</span>
                 </div>
@@ -186,7 +257,7 @@
                                 <span class="n-sw">Nintendo Switch</span>
                             </div> -->
             </div>
-    
+
 
         </section>
 
@@ -201,24 +272,24 @@
 
             </div>
             <div class="Start-shopping">
-                    <p>
-                        Shop games, exclusive Nintendo merchandise, and more! Plus, get free shipping on orders $50 and
-                        over.
-                    </p>
+                <p>
+                    Shop games, exclusive Nintendo merchandise, and more! Plus, get free shipping on orders $50 and
+                    over.
+                </p>
 
-                    <input type="submit" value="Start shopping">
+                <input type="submit" value="Start shopping">
 
-             </div>
+            </div>
 
-                <div class="console-show">
-                    <img src="nintendo\assets\Screenshot (3).png" alt="Nintendo consoles showcase">
+            <div class="console-show">
+                <img src="nintendo\assets\Screenshot (3).png" alt="Nintendo consoles showcase">
 
-                    <p>
-                        Find the perfect Nintendo Switch system for you.
-                    </p>
+                <p>
+                    Find the perfect Nintendo Switch system for you.
+                </p>
 
-                    <input type="submit" value="Explore now">
-                </div>
+                <input type="submit" value="Explore now">
+            </div>
 
         </section>
 
@@ -336,7 +407,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/characters/The-Legends-of-Zelda.jpg" width="250" alt="The Legends of Zelda" />
+                    <img src="images-main4/characters/The-Legends-of-Zelda.jpg" width="250"
+                        alt="The Legends of Zelda" />
                     <h2>The Legends of Zelda™️</h2>
                 </div>
 
@@ -368,7 +440,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-best-seller/triangle-strategy.jpg" width="250" alt="triangle strategy" />
+                    <img src="images-main4/digital-best-seller/triangle-strategy.jpg" width="250"
+                        alt="triangle strategy" />
                     <h3>TRIANGLE STRATEGY™</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -376,7 +449,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-best-seller/pokemon-legends-archeus.jpg" width="250" alt="pokemon legends archeus" />
+                    <img src="images-main4/digital-best-seller/pokemon-legends-archeus.jpg" width="250"
+                        alt="pokemon legends archeus" />
                     <h3>Pokémon™ Legends: Arceus</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -384,7 +458,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-best-seller/Super-Mario-3d-world.jpg" width="250" alt="Super Mario 3d world" />
+                    <img src="images-main4/digital-best-seller/Super-Mario-3d-world.jpg" width="250"
+                        alt="Super Mario 3d world" />
                     <h3>Super Mario™ 3D World + Bowser’s Fury</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -408,7 +483,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-best-seller/mario-+-rabbits-kingdom-battle.jpg" width="250" alt="mario + rabbits kingdom battle" />
+                    <img src="images-main4/digital-best-seller/mario-+-rabbits-kingdom-battle.jpg" width="250"
+                        alt="mario + rabbits kingdom battle" />
                     <h3>Mario + Rabbids® Kingdom Battle</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -424,7 +500,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-best-seller/new-super-mario-bros-u-deluxe.jpg" width="250" alt="new super mario bros u deluxe" />
+                    <img src="images-main4/digital-best-seller/new-super-mario-bros-u-deluxe.jpg" width="250"
+                        alt="new super mario bros u deluxe" />
                     <h3>New Super Mario Bros.™ U Deluxe</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -432,7 +509,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-best-seller/mario-party-superstars.jpg" width="250" alt="mario party superstars" />
+                    <img src="images-main4/digital-best-seller/mario-party-superstars.jpg" width="250"
+                        alt="mario party superstars" />
                     <h3>Mario Party™ Superstar</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -448,7 +526,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-best-seller/xcom-2-collection.jpg" width="250" alt="XCOM 2 Collection" />
+                    <img src="images-main4/digital-best-seller/xcom-2-collection.jpg" width="250"
+                        alt="XCOM 2 Collection" />
                     <h3>XCOM® 2 Collection</h3>
                     <span>$49.99</span>
                     <span>Nintendo Switch</span>
@@ -472,7 +551,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-best-seller/assassin's-creed-the-rebel-collection.jpg" width="250" alt="Assassin’s creed the rebel collection" />
+                    <img src="images-main4/digital-best-seller/assassin's-creed-the-rebel-collection.jpg" width="250"
+                        alt="Assassin’s creed the rebel collection" />
                     <h3>Assassin’s Creed®: The Rebel Collection</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -488,7 +568,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-best-seller/animal-crossing-new-horizon.jpg" width="250" alt="animal crossing new horizon" />
+                    <img src="images-main4/digital-best-seller/animal-crossing-new-horizon.jpg" width="250"
+                        alt="animal crossing new horizon" />
                     <h3>Animal Crossing™: New Horizons</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -496,7 +577,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-best-seller/super-smash-bros-ultimate.jpg" width="250" alt="super smash bros ultimate" />
+                    <img src="images-main4/digital-best-seller/super-smash-bros-ultimate.jpg" width="250"
+                        alt="super smash bros ultimate" />
                     <h3>Super Smash Bros.™ Ultimate</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -536,7 +618,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-best-seller/mortal-kombat-11.jpg" width="250" alt="Mortal Kombat 11" />
+                    <img src="images-main4/digital-best-seller/mortal-kombat-11.jpg" width="250"
+                        alt="Mortal Kombat 11" />
                     <h3>Mortal Kombat 11</h3>
                     <span>$49.99</span>
                     <span>Nintendo Switch</span>
@@ -544,7 +627,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-best-seller/need-for-speed-hot-pursuit.jpg" width="250" alt="need for speed hot pursuit" />
+                    <img src="images-main4/digital-best-seller/need-for-speed-hot-pursuit.jpg" width="250"
+                        alt="need for speed hot pursuit" />
                     <h3>need-for-speed-hot-pursuit</h3>
                     <span>$39.99</span>
                     <span>Nintendo Switch</span>
@@ -559,7 +643,8 @@
             <h2>digital new releases</h2>
             <div>
                 <div>
-                    <img src="images-main4/digital-new-releases/13-Sentinels-Aegis-Rim.jpg" width="250" alt="13 Sentinels: Aegis Rim" />
+                    <img src="images-main4/digital-new-releases/13-Sentinels-Aegis-Rim.jpg" width="250"
+                        alt="13 Sentinels: Aegis Rim" />
                     <h3>13 Sentinels: Aegis Rim</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -567,7 +652,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Don't-Starve-Together.jpg" width="250" alt="Don't Starve Together" />
+                    <img src="images-main4/digital-new-releases/Don't-Starve-Together.jpg" width="250"
+                        alt="Don't Starve Together" />
                     <h3>Don't Starve Together</h3>
                     <span>$14.99</span>
                     <span>Nintendo Switch</span>
@@ -575,7 +661,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/CHRONO-CROSS-THE-RADICAL-DREAMERS-EDITION.jpg" width="250" alt="CHRONO CROSS: THE RADICAL DREAMERS EDITION" />
+                    <img src="images-main4/digital-new-releases/CHRONO-CROSS-THE-RADICAL-DREAMERS-EDITION.jpg"
+                        width="250" alt="CHRONO CROSS: THE RADICAL DREAMERS EDITION" />
                     <h3>CHRONO CROSS: THE RADICAL DREAMERS EDITION</h3>
                     <span>$19.99</span>
                     <span>Nintendo Switch</span>
@@ -583,7 +670,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/LEGO-Star-Wars-The-Skywalker-Saga.jpg" width="250" alt="LEGO® Star Wars™: The Skywalker Saga" />
+                    <img src="images-main4/digital-new-releases/LEGO-Star-Wars-The-Skywalker-Saga.jpg" width="250"
+                        alt="LEGO® Star Wars™: The Skywalker Saga" />
                     <h3>LEGO® Star Wars™: The Skywalker Saga</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -591,7 +679,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/MLB-The-Show-22.jpg" width="250" alt="MLB® The Show™ 22" />
+                    <img src="images-main4/digital-new-releases/MLB-The-Show-22.jpg" width="250"
+                        alt="MLB® The Show™ 22" />
                     <h3>MLB® The Show™ 22</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -599,7 +688,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Kirby-and-the-Forgotten-Land.jpg" width="250" alt="Kirby™ and the Forgotten Land" />
+                    <img src="images-main4/digital-new-releases/Kirby-and-the-Forgotten-Land.jpg" width="250"
+                        alt="Kirby™ and the Forgotten Land" />
                     <h3>Kirby™ and the Forgotten Land</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -615,7 +705,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Mario-Kart-8-Deluxe-Booster-Course-Pass.jpg" width="250" alt="Mario Kart™ 8 Deluxe - Booster Course Pass" />
+                    <img src="images-main4/digital-new-releases/Mario-Kart-8-Deluxe-Booster-Course-Pass.jpg" width="250"
+                        alt="Mario Kart™ 8 Deluxe - Booster Course Pass" />
                     <h3>Mario Kart™ 8 Deluxe - Booster Course Pass</h3>
                     <span>$24.99</span>
                     <span>Nintendo Switch</span>
@@ -623,7 +714,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Persona-4-Arena-Ultimax.jpg" width="250" alt="Persona 4 Arena Ultimax" />
+                    <img src="images-main4/digital-new-releases/Persona-4-Arena-Ultimax.jpg" width="250"
+                        alt="Persona 4 Arena Ultimax" />
                     <h3>Persona 4 Arena Ultimax</h3>
                     <span>$29.99</span>
                     <span>Nintendo Switch</span>
@@ -631,7 +723,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Chocobo-GP-Lite.jpg" width="250" alt="Chocobo GP Lite" />
+                    <img src="images-main4/digital-new-releases/Chocobo-GP-Lite.jpg" width="250"
+                        alt="Chocobo GP Lite" />
                     <h3>Chocobo GP Lite</h3>
                     <span>Free</span>
                     <span>Nintendo Switch</span>
@@ -639,7 +732,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Aztech-Forgotten-Gods.jpg" width="250" alt="Aztech Forgotten Gods" />
+                    <img src="images-main4/digital-new-releases/Aztech-Forgotten-Gods.jpg" width="250"
+                        alt="Aztech Forgotten Gods" />
                     <h3>Aztech Forgotten Gods</h3>
                     <span>$29.99</span>
                     <span>Nintendo Switch</span>
@@ -647,7 +741,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/TRIANGLE-STRATEGY.jpg" width="250" alt="TRIANGLE STRATEGY™" />
+                    <img src="images-main4/digital-new-releases/TRIANGLE-STRATEGY.jpg" width="250"
+                        alt="TRIANGLE STRATEGY™" />
                     <h3>TRIANGLE STRATEGY™</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -655,7 +750,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/ASSASSIN’S-CREED-THE-EZIO-COLLECTION.jpg" width="250" alt="ASSASSIN’S CREED® THE EZIO COLLECTION" />
+                    <img src="images-main4/digital-new-releases/ASSASSIN’S-CREED-THE-EZIO-COLLECTION.jpg" width="250"
+                        alt="ASSASSIN’S CREED® THE EZIO COLLECTION" />
                     <h3>ASSASSIN’S CREED® THE EZIO COLLECTION</h3>
                     <span>$39.99</span>
                     <span>Nintendo Switch</span>
@@ -679,7 +775,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Pokémon-Legends-Arceus.jpg" width="250" alt="Pokémon™ Legends: Arceus" />
+                    <img src="images-main4/digital-new-releases/Pokémon-Legends-Arceus.jpg" width="250"
+                        alt="Pokémon™ Legends: Arceus" />
                     <h3>Pokémon™ Legends: Arceus</h3>
                     <span>$59.99</span>
                     <span>Nintendo Switch</span>
@@ -695,7 +792,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Bayonetta-and-Bayonetta-2-Digital-Bundle.jpg" width="250" alt="Bayonetta™ and Bayonetta™ 2 Digital Bundle" />
+                    <img src="images-main4/digital-new-releases/Bayonetta-and-Bayonetta-2-Digital-Bundle.jpg"
+                        width="250" alt="Bayonetta™ and Bayonetta™ 2 Digital Bundle" />
                     <h3>Bayonetta™ and Bayonetta™ 2 Digital Bundle</h3>
                     <span>$59.98</span>
                     <span>Nintendo Switch</span>
@@ -703,7 +801,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Life-is-Strange-True-Colors-Deluxe-Edition.jpg" width="250" alt="Life is Strange: True Colors - Deluxe Edition" />
+                    <img src="images-main4/digital-new-releases/Life-is-Strange-True-Colors-Deluxe-Edition.jpg"
+                        width="250" alt="Life is Strange: True Colors - Deluxe Edition" />
                     <h3>Life is Strange: True Colors - Deluxe Edition</h3>
                     <span>$69.99</span>
                     <span>Nintendo Switch</span>
@@ -711,7 +810,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Big-Brain-Academy-Brain-vs-Brain.jpg" width="250" alt="Big Brain Academy™: Brain vs. Brain" />
+                    <img src="images-main4/digital-new-releases/Big-Brain-Academy-Brain-vs-Brain.jpg" width="250"
+                        alt="Big Brain Academy™: Brain vs. Brain" />
                     <h3>Big Brain Academy™: Brain vs. Brain</h3>
                     <span>$29.99</span>
                     <span>Nintendo Switch</span>
@@ -719,7 +819,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Danganronpa-S-Ultimate-Summer-Camp.jpg" width="250" alt="Danganronpa S: Ultimate Summer Camp" />
+                    <img src="images-main4/digital-new-releases/Danganronpa-S-Ultimate-Summer-Camp.jpg" width="250"
+                        alt="Danganronpa S: Ultimate Summer Camp" />
                     <h3>Danganronpa S: Ultimate Summer Camp</h3>
                     <span>$19.99</span>
                     <span>Nintendo Switch</span>
@@ -727,7 +828,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Danganronpa-Trigger-Happy-Havoc-Anniversary-Edition.jpg" width="250" alt="Danganronpa: Trigger Happy Havoc Anniversary Edition" />
+                    <img src="images-main4/digital-new-releases/Danganronpa-Trigger-Happy-Havoc-Anniversary-Edition.jpg"
+                        width="250" alt="Danganronpa: Trigger Happy Havoc Anniversary Edition" />
                     <h3>Danganronpa: Trigger Happy Havoc Anniversary Edition</h3>
                     <span>$14.99</span>
                     <span>Nintendo Switch</span>
@@ -735,7 +837,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Danganronpa-2-Goodbye-Despair-Anniversary-Edition.jpg" width="250" alt="Danganronpa 2: Goodbye Despair Anniversary Edition" />
+                    <img src="images-main4/digital-new-releases/Danganronpa-2-Goodbye-Despair-Anniversary-Edition.jpg"
+                        width="250" alt="Danganronpa 2: Goodbye Despair Anniversary Edition" />
                     <h3>Danganronpa 2: Goodbye Despair Anniversary Edition</h3>
                     <span>$14.99</span>
                     <span>Nintendo Switch</span>
@@ -743,7 +846,8 @@
                 </div>
 
                 <div>
-                    <img src="images-main4/digital-new-releases/Danganronpa-V3-Killing-Harmony-Anniversary-Edition.jpg" width="250" alt="Danganronpa V3: Killing Harmony Anniversary Edition" />
+                    <img src="images-main4/digital-new-releases/Danganronpa-V3-Killing-Harmony-Anniversary-Edition.jpg"
+                        width="250" alt="Danganronpa V3: Killing Harmony Anniversary Edition" />
                     <h3>Danganronpa V3: Killing Harmony Anniversary Edition</h3>
                     <span>$29.99</span>
                     <span>Nintendo Switch</span>
@@ -754,16 +858,16 @@
         </section>
     </main>
 
-    <footer>           
+    <footer>
         <div class="footer-social-midia">
             <div class="footer-logo-link">
-                <a href="#"><img src="#" alt="logo nitendo"/></a>
+                <a href="#"><img src="#" alt="logo nitendo" /></a>
             </div>
             <div class="link-social-midias">
-                <a href="#"><img src="#" alt="logo facebook"/></a>
-                <a href="#"><img src="#" alt="logo instagram"/></a>
-                <a href="#"><img src="#" alt="logo twitter"/></a>
-                <a href="#"><img src="#" alt="logo youtube"/></a>
+                <a href="#"><img src="#" alt="logo facebook" /></a>
+                <a href="#"><img src="#" alt="logo instagram" /></a>
+                <a href="#"><img src="#" alt="logo twitter" /></a>
+                <a href="#"><img src="#" alt="logo youtube" /></a>
             </div>
         </div>
         <div class="footer-menu-links">
@@ -828,15 +932,15 @@
                 <a href="#">Community guidelines</a>
                 <a href="#">Online Safety priciples</a>
             </div>
-        </div>          
+        </div>
         <div class="footer-privacy-certifed">
-            <a href="#"><img src="#" alt="privacy certified"/></a>
+            <a href="#"><img src="#" alt="privacy certified" /></a>
         </div>
         <div class="footer-bot">
             <div class="footer-copyright">
                 <p class="text-copyright">
                     © Nintendo.Games are property of their respective owners.
-                    Nintendo of America Inc. 
+                    Nintendo of America Inc.
                     Headquarters are in Redmond, Washington, USA
                 </p>
             </div>
@@ -853,10 +957,10 @@
                 <div class="footer-documents">
                     <a href="#">footer-documents & policies</a>
                 </div>
-            </div>    
+            </div>
             <div class="footer-region">
                 <a href="#"><img src="#" alt="Region flag">Change region</a>
-            </div>          
+            </div>
         </div>
     </footer>
 </body>
