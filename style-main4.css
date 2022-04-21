@@ -10,6 +10,7 @@
         #main4 p {
             height: auto;
         }
+
         /* immagini dei character, transizione per lo zoom quando in hover */
         #main4 .grid img {
             transition: 300ms;
