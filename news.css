@@ -1,41 +1,7 @@
-html {
-    font-size: 16px;
-}
-
-body {
-    margin: 0;
-}
-
-img {
-    max-width: 100%;
-}
-
-.flex {
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 0;
-    margin: 0;
-    gap: 2vh 2vw;
-}
-
-/* i figli diretti del flex container, i flex item */
-.flex>* {
-    flex: 1 0 auto;
-}
-
-.grid {
-    display: grid;
-    padding: 0;
-    margin: 0;
-    /* griglia adattiva */
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 2vh 2vw;
-}
 
 #main3 {
     display: flex;
     flex-flow: column wrap;
-    margin: 0vw 5vw;
 }
 
 #main3 .bigger-cards img {
@@ -143,8 +109,8 @@ button {
 }
 
 #main3 h3,
-time,
-p {
+#main3 time,
+#main3 p {
     color: rgb(63, 63, 63);
 }
 
