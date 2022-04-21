@@ -149,6 +149,7 @@ p {
 }
 
 #main3 button,
+#main3
 div:hover {
     cursor: pointer;
 }
@@ -165,12 +166,8 @@ div:hover {
 
 }
 
-#main3 div:hover img {
-    filter: grayscale(0);
-
-
-}
 
 #main3 div:hover>img {
     filter: grayscale(80%);
+    transition: 300ms;
 }
