@@ -121,7 +121,7 @@ header , body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 70px;
 }
 
 .pre-order-now-box {
