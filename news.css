@@ -24,12 +24,6 @@
     padding-left: 40px;
 }
 
-#main3>.bigger-cards {
-    display: flex;
-    flex-flow: row nowrap;
-
-}
-
 #main3 time {
     display: block;
     margin: 15px 0px 0px 0px;
@@ -40,7 +34,7 @@
 .bigger-cards {
     padding: 20px;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-self: flex-start;
     flex: 1 0 200px;
 
