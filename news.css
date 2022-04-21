@@ -1,0 +1,170 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0;
+    margin: 0;
+    gap: 2vh 2vw;
+}
+
+/* i figli diretti del flex container, i flex item */
+.flex>* {
+    flex: 1 0 auto;
+}
+
+.grid {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    /* griglia adattiva */
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 2vh 2vw;
+}
+
+#main3 {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0vw 5vw;
+}
+
+#main3 .bigger-cards img {
+    border-radius: 1%;
+}
+
+#main3 .smaller-cards img {
+    border-radius: 5%;
+}
+
+#main3 h3, p {
+
+    height: 70px;
+    overflow: hidden;
+}
+
+
+#main3 h1 {
+    padding-left: 40px;
+}
+
+#main3>.bigger-cards {
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+
+#main3 time {
+    display: block;
+    margin: 15px 0px 0px 0px;
+}
+
+.card-1-main3,
+.card-2-main3,
+.bigger-cards {
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-self: flex-start;
+
+
+
+}
+
+#main3>.smaller-cards {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card-3-main3,
+.card-4-main3,
+.card-5-main3,
+.card-6-main3 {
+    margin: 40px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+
+
+button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+#main3 button:hover {
+    background-color: rgb(131, 9, 9);
+
+}
+
+
+
+#news-articles {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    width: 15rem;
+    height: 50px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+
+}
+
+#news-articles>svg {
+    margin-right: 10px;
+
+}
+
+#main3 a {
+    color: red;
+}
+
+#main3 h3,
+time,
+p {
+    color: rgb(63, 63, 63);
+}
+
+#main3 button,
+div:hover {
+    cursor: pointer;
+}
+
+#main3 div:hover>a {
+
+    color: rgb(131, 9, 9);
+
+}
+
+#main3 div:hover>h3 {
+
+    color: rgb(250, 4, 4);
+
+}
+
+#main3 div:hover img {
+    filter: grayscale(0);
+
+
+}
+
+#main3 div:hover>img {
+    filter: grayscale(80%);
+}
