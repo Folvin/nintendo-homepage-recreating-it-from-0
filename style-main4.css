@@ -1,0 +1,159 @@
+        /* da sostituire con section */
+        #main4 {
+            margin: 0 5vw;
+        }
+
+        /* da sostituire con section>* */
+        #main4>* {
+            margin: 4vh 0;
+        }
+        #main4 p {
+            height: auto;
+        }
+
+        /* immagini dei character, transizione per lo zoom quando in hover */
+        #main4 .grid img {
+            transition: 300ms;
+        }
+
+        /* quando le immagini dei character sono in hover dezoommano */
+        #main4 .grid img:hover {
+            transform: scale(0.95);
+        }
+
+        /* l'hr modificato lo stile il colore e il margin */
+        #main4 hr {
+            margin: 0;
+            border: 1px solid gainsboro;
+        }
+
+        /* l'intestazione della prima serie di card, digital best seller e see full list uno affianco all'altro */
+        #main4 .main4-best-seller {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+
+        /* la linea rossa che separa tra digital best seller e see full list */
+        #main4 .main4-best-seller h2 {
+            margin-right: 10px;
+            padding-right: 11px;
+            border-right: 2px solid gainsboro;
+        }
+
+        /* tolte le impostazioni di default sul tag a e messo il colore rosso */
+        #main4 .main4-best-seller a {
+            text-decoration: none;
+            color: red;
+        }
+
+
+        /* gli span hanno una sottolineatura rossa che in realtà è un border-bottom */
+        #main4 span {
+            display: inline-block;
+            border-bottom: 2px solid red;
+            padding-bottom: 3px;
+            transition: 300ms;
+        }
+
+        /* see full list in hover diventa di un rosso piu scuro */
+        #main4 .main4-best-seller>div:last-child span:hover {
+            color: rgb(112, 0, 0);
+            border-color: rgb(112, 0, 0);
+        }
+
+        /* overflow al container delle card ed un'altezza impostata */
+        #main4 .flex {
+            overflow: auto;
+            height: 350px;
+        }
+
+        /* le card hanno un bordo e una max width cosi che il testo non va ad allargare gli item. 
+            display flex per gestire il loro contenuto verticalmente */
+        #main4 .flex>* {
+            border: 2px solid gainsboro;
+            border-radius: 15px;
+            margin-bottom: 5px;
+            width: 250px;
+            display: flex;
+            flex-flow: column nowrap;
+            transition: 300ms;
+            cursor: pointer;
+        }
+        /* le card quando in hover rimpiccioliscono */
+        #main4 .flex>*:hover {
+            transform: scale(0.95);
+        }
+        /* border radius top-left e top-right all'immagine per essere coerenti con il border radius contenitore */
+        #main4 .flex>* *:first-child>img {
+            border-radius: 13px 13px 0 0;
+            transition: 300ms;
+        }
+
+
+        /* allarga il titolo della card per tutta l'altezza libera del contenitore 
+            in modo che gli elementi successivi siano alla fine della card*/
+        #main4 .flex>*>*:nth-child(2) {
+            flex: 1 0 auto;
+            transition: 300ms;
+        }
+
+        /* quando passi sopra alla card il titolo diventa rosso */
+        #main4 .flex>*:hover>*:nth-child(2) {
+            color: red;
+        }
+
+        /* tolti i margini e i padding di default ai tag p */
+        #main4 .flex p {
+            margin: 0;
+        }
+
+        /* spaziatura a destra e sinitra delle scritte nella card */
+        #main4 .flex>*>*:not(:first-child) {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        /* spaziatura sotto del contenuto della card e flex container per gestire l'icona del cuoricino */
+        #main4 .flex>*>*:last-child {
+            margin-bottom: 15px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+
+        /* spostata sulla destra l'icona del cuore */
+        #main4 .flex>*>*:last-child img {
+            margin-left: 90px;
+        }
+
+        /* il blocco rosso alla fine della prima fila di card */
+        #main4 .flex .see-full-list {
+            width: 150px;
+            background-color: red;
+            transition: 300ms;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        /* il blocco rosso alla fine della prima fila di card quando in hover */
+        #main4 .flex .see-full-list:hover {
+            filter: brightness(80%);
+        }
+
+        /* tutto il blocco rosso alla fine della prima fila è cliccabile per il link
+            tolte le impostazioni di default del tag a e reso un flex container per centrare il tag p al suo interno */
+        #main4 .flex .see-full-list a {
+            flex: 1 0 0;
+            margin: 0;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            display: flex;
+        }
+
+        /* allarga p per tutta la lungezza del blocco cosi che si puo centrare con text align */
+        #main4 .flex .see-full-list p {
+            flex: 1 0 auto;
+            text-align: center;
+        }
