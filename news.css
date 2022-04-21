@@ -46,7 +46,7 @@ img {
     border-radius: 5%;
 }
 
-#main3 h3, p {
+#main3 h3, #main3 p {
 
     height: 70px;
     overflow: hidden;
