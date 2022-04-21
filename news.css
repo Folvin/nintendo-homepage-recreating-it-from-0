@@ -30,7 +30,14 @@
 }
 
 .card-1-main3,
-.card-2-main3,
+.card-2-main3 {
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: flex-start;
+    flex: 1 0 200px;
+}
+
 .bigger-cards {
     padding: 20px;
     display: flex;
