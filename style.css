@@ -10,16 +10,16 @@ img {
     max-width: 100%;
 }
 
-.flex  {
+.flex {
     display: flex;
     flex-flow: row nowrap;
     padding: 0;
     margin: 0;
-    gap: 0 10px;
+    gap: 2vh 2vw;
 }
 
 /* i figli diretti del flex container, i flex item */
-.flex > * {
+.flex>* {
     flex: 1 0 auto;
 }
 
@@ -28,6 +28,6 @@ img {
     padding: 0;
     margin: 0;
     /* griglia adattiva */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));    
-    gap: 10px 10px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 2vh 2vw;
 }
