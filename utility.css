@@ -1,0 +1,166 @@
+.flex-first-navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 15%;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+.research-bar{
+    display: flex; 
+    width: 100%;
+    gap:40px;
+
+}
+.research-lens {
+    display: flex;
+}
+.research-all-categories{
+    display: flex;
+    gap:1rem;
+}
+
+.nintendo-logo {
+    padding: 15px;
+    background-color: red;
+    height: 100%; 
+    margin-right:15px;
+}
+
+.navbar-symbol {
+    margin-right: 15px;
+}
+
+
+.navbars {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 10%;
+    background-color: white;
+    }
+.flex-second-navbar {
+    display: flex;
+    gap: 1rem; 
+    padding: 2px 0px 8px ;
+     
+
+
+}
+.navbar-item {
+    display: flex;
+    gap: 0.3rem; 
+}
+
+.navbar-item-symbol {
+    padding-left: 2px;
+}
+.navbar-top-right {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    margin-right: 1.5%;
+
+}
+.second-navbar {
+    display:flex ;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+    margin-bottom: 0;
+}
+.research-and-items {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    margin-bottom:15px;
+    margin-top:15px; 
+    width:420px;
+}
+.navbar-right-and-research {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    box-sizing: border-box;
+}
+.svg-try{
+    align-items: center;
+}
+.hover-red:hover {
+    color:red 
+}
+.fixed-nav {
+    z-index: 1;
+    position: fixed;
+    overflow: hidden;
+    top:0; 
+    width:100%;
+}
+header , body {
+    margin-top: 90px;
+}
+.big-image > img {
+    width:95%; 
+    min-height: 1px;
+    display: block;
+    margin-top:2%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-bottom: 1%;
+    border-radius: 5px;
+}
+.big-image {
+ background-image: linear-gradient(to top, white, rgb(45, 160, 189));
+ width:100%;
+ overflow: hidden;
+}
+.description-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.pre-order-now-box {
+    background-color: red;
+    align-items: center; 
+    display: flex;
+    color: white;
+    border-radius: 8%;
+    width: auto;
+    padding: 0px 1.5rem;
+    height: 3rem;
+}
+.text-and-red-box {
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
+    align-items: center;
+    margin-left:2.5%;
+}
+
+.e-logo {
+    margin-right:2.5%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.e-logo-text {
+    display: flex;
+    flex-direction: column;
+    margin-top:0;
+    margin-left:10px;
+}
+
+.e-logo-text1 {
+    border-bottom: solid grey 1px;
+    height:50%;
+    
+}
+.e-logo-text2 {
+    height: 50%;
+    margin-top: -14px;
+}
