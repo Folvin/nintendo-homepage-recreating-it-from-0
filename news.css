@@ -46,7 +46,8 @@ img {
     border-radius: 5%;
 }
 
-#main3 h3, #main3 p {
+#main3 h3,
+#main3 p {
 
     height: 70px;
     overflow: hidden;
@@ -60,7 +61,7 @@ img {
 #main3>.bigger-cards {
     display: flex;
     flex-flow: row nowrap;
-    
+
 }
 
 #main3 time {
@@ -75,26 +76,31 @@ img {
     display: flex;
     flex-flow: column wrap;
     align-self: flex-start;
-
+    flex: 1 0 200px;
 
 
 }
 
 #main3>.smaller-cards {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: flex-start;
     justify-content: space-between;
+
 }
 
 .card-3-main3,
-.card-4-main3,
+.card-4-main3 {
+    margin: 40px;
+    flex: 1 0 100px;
+
+}
+
 .card-5-main3,
 .card-6-main3 {
     margin: 40px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
+    flex: 1 0 100px;
+
 }
 
 
