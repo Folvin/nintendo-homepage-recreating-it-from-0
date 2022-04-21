@@ -34,7 +34,7 @@ footer a {
     justify-content: space-between;
 }
 
-.footer-social-media, svg {
+.footer-social-media,footer svg {
     color: white;
 }
 
@@ -57,7 +57,7 @@ a:last-child {
     margin-bottom: 0px;
 }
 
-a h3 {
+footer a h3 {
     color: black;
     margin-top: 0px;
     font-size: 1.125rem;
