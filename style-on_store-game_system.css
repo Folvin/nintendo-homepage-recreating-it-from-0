@@ -78,7 +78,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 40px;
-    margin-left: 24px;
+    margin-left: 2.5%;
 }
 
 .online-store-head {
@@ -94,6 +94,12 @@
     box-sizing: border-box;
 }
 
+#main2 > h1 { 
+    margin-left:2.5%;
+}
+.red-label {
+    margin-left:2.5%;
+}
 @media screen and (max-width: 700px) {
 
     .Start-shopping {
