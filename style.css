@@ -4,6 +4,7 @@ html {
 
 body {
     margin: 0;
+    background-image: linear-gradient(white, white 50%, rgb(221, 221, 221) 100%);
 }
 
 img {
@@ -30,4 +31,8 @@ img {
     /* griglia adattiva */
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     gap: 2vh 2vw;
+}
+
+#full-main {
+    margin: 0 4vw;
 }

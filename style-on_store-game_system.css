@@ -1,0 +1,117 @@
+.flex-online-store {
+    display: flex;
+    flex-direction: column;
+}
+
+.Start-shopping {
+    display: flex;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.Start-shopping > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.Start-shopping > input {
+    background-color: red;
+    flex-basis: 171.74px;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color: white;
+    border-radius: 5px;
+    height: 48px;
+    border: none;
+}
+
+.Start-shopping > input:hover {
+    transform: scale(110%);
+    filter: brightness(90%);
+    transition: all 300ms;
+}
+
+.console-show {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.family-switch-image {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+
+}
+
+.family-switch-image > input {
+    background-color: red;
+    flex-basis: 153.63px;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 2vh;
+    margin-bottom: 1vh; 
+    color: white;
+    border-radius: 5px;
+    height: 46px;
+    border: none;
+}
+
+.family-switch-image > input:hover {
+    transform: scale(110%);
+    filter: brightness(90%);
+    transition: all 300ms;
+}
+
+.family-switch-image > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 40px;
+    margin-left: 24px;
+}
+
+.online-store-head {
+    font-size: xx-large;
+}
+
+.game-head {
+    font-size: xx-large;
+}
+
+#main2 hr {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+
+    .Start-shopping {
+        flex-wrap: wrap;
+        
+    }
+
+    .Start-shopping > input {
+        
+        flex-grow: 1;
+    }
+
+    .family-switch-image {
+        flex-wrap: wrap;
+    }
+
+    .family-switch-image > input {
+        flex-grow: 1;
+    }
+    
+}
